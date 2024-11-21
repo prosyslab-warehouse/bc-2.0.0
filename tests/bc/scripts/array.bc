@@ -1,0 +1,38 @@
+#! /usr/bin/bc -q
+
+define z(a[]) {
+	for (i = 0; i < l; ++i) {
+		a[i]
+	}
+}
+
+define x(a[]) {
+
+	# Test for separate vars and arrays.
+	auto a
+
+	for (a = 0; a < l; ++a) {
+		a[a] = -a
+	}
+
+	z(a[])
+}
+
+for (i = 0; i < 101; ++i) {
+	a[i] = i
+}
+
+a[104] = 204
+
+l = length(a[])
+
+for (i = 0; i <= l; ++i) {
+	a[i]
+}
+
+z(a[])
+x(a[])
+z(a[])
+l
+
+halt

@@ -1,0 +1,6 @@
+stringanother stringyet
+another
+stringnoescapes\nnewline
+stringnewline
+\\
+\d
